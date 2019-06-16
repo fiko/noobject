@@ -1,0 +1,21 @@
+{
+    "name": "fikoborizqy/noobject",
+    "description": "Not Only Object will return NULL instead of error for undefined property.",
+    "type": "library",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fiko Borizqy",
+            "email": "fiko@dr.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src/NoObject.php"
+        ]
+    },
+    "minimum-stability": "dev"
+}
