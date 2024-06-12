@@ -2,31 +2,33 @@
 
 /**
  * No Object
- * 
- * It's a Not Only Object that will return what it's value if it has value, but 
- * returns NULL if no property or no method found on this object. In an ordinary 
- * object you will get an error when calling a property that doesn't exist, that 
+ *
+ * It's a Not Only Object that will return what it's value if it has value, but
+ * returns NULL if no property or no method found on this object. In an ordinary
+ * object you will get an error when calling a property that doesn't exist, that
  * is why this repo was created, to resolve that problem.
- * 
+ *
  * @package No Object
  * @author Fiko Borizqy <fiko@dr.com>
  * @license MIT
  * @license https://choosealicense.com/licenses/mit/
  * @see https://github.com/fikoborizqy/object
  */
+
 namespace Borizqy\NoObject;
 
-
+use stdClass;
 
 /**
  * No Object Instance
- * 
+ *
  * Base object, so when getting undefined property or undefined method,
  * is will automatically return null value.
- * 
+ *
  * @access public
  */
-class NoObject {
+class NoObject extends stdClass
+{
 
     /**
      * No Object constructor - Decide variables that will be stored on this 
